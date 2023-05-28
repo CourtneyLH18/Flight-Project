@@ -18,3 +18,16 @@
     background-color: green;
     border: 2px white solid;
 }
+
+.dropdown_hover{
+    --bs-dropdown-link-hover-bg: olive;
+}
+
+.search_button{
+    --bs-btn-hover-bg: olive;
+    border-color: olive;
+}
+
+.carousel_height{
+    height: 500px;
+}
