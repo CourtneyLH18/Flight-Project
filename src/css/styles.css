@@ -63,7 +63,7 @@ h1 {
 
 .box {
   display: flex;
-  align-items:center;
+  align-items: center;
 }
 
 .multiline {
@@ -72,5 +72,10 @@ h1 {
 
 .carousel-control-next,
 .carousel-control-prev /*, .carousel-indicators */ {
-    filter: invert(100%);
+  filter: invert(100%);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
 }
