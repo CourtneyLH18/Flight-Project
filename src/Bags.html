@@ -15,111 +15,16 @@
     <!-- Custom CSS-->
     <link rel="stylesheet" href="css/styles.css" />
     <title>Home</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
   </head>
   <body>
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="Homepage.html">
-          <img src="../images/flight.png" alt="Flight" width="30" height="30" />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                >Suitcases</a
-              >
-              <ul class="dropdown-menu dropdown_hover">
-                <li>
-                  <a class="dropdown-item" href="Suitcases.html"
-                    >All Suitcases</a
-                  >
-                </li>
-                <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="#">Carry-Ons</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="#">Checked</a></li>
-              </ul>
-            </li>
-
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                >Bags</a
-              >
-              <ul class="dropdown-menu dropdown_hover">
-                <li><a class="dropdown-item" href="Bags.html">All Bags</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="#">Duffles</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="#">Backpacks</a></li>
-              </ul>
-            </li>
-
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                >Accessories</a
-              >
-              <ul class="dropdown-menu dropdown_hover">
-                <li>
-                  <a class="dropdown-item" href="Accessories.html"
-                    >All Accessories</a
-                  >
-                </li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="#">Packing Organizers</a>
-                </li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="#">In-flight Essentials</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled"></a>
-            </li>
-          </ul>
-
-          <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder=""
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success search_button" type="submit">
-              Search
-            </button>
-          </form>
-        </div>
-      </div>
-    </nav>
+    <div id="navigation"></div>
+    <script>
+      $(function () {
+        $("#navigation").load("navigation.html");
+      });
+    </script>
 
     <!--Product items-->
     <div class="row">
@@ -180,6 +85,14 @@
         </div>
       </div>
     </div>
+
+    <!-- Navigation Bar -->
+    <div id="bottomnavigation"></div>
+    <script>
+      $(function () {
+        $("#bottomnavigation").load("bottomnavigation.html");
+      });
+    </script>
 
     <!-- Content body -->
     <div class="container">

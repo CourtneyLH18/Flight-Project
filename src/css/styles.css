@@ -69,3 +69,8 @@ h1 {
 .multiline {
   white-space: pre-line;
 }
+
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+    filter: invert(100%);
+}

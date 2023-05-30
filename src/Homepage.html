@@ -15,119 +15,23 @@
     <!-- Custom CSS-->
     <link rel="stylesheet" href="css/styles.css" />
     <title>Home</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
   </head>
   <body>
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="Homepage.html">
-          <img src="../images/flight.png" alt="Flight" width="30" height="30" />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                >Suitcases</a
-              >
-              <ul class="dropdown-menu dropdown_hover">
-                <li>
-                  <a class="dropdown-item" href="Suitcases.html"
-                    >All Suitcases</a
-                  >
-                </li>
-                <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="#">Carry-Ons</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="#">Checked</a></li>
-              </ul>
-            </li>
-
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                >Bags</a
-              >
-              <ul class="dropdown-menu dropdown_hover">
-                <li><a class="dropdown-item" href="Bags.html">All Bags</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="#">Cross Body Bags</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="#">Backpacks</a></li>
-              </ul>
-            </li>
-
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                >Accessories</a
-              >
-              <ul class="dropdown-menu dropdown_hover">
-                <li>
-                  <a class="dropdown-item" href="Accessories.html"
-                    >All Accessories</a
-                  >
-                </li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="#">Packing Organizers</a>
-                </li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="#">In-flight Essentials</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled"></a>
-            </li>
-          </ul>
-
-          <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder=""
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success search_button" type="submit">
-              Search
-            </button>
-          </form>
-        </div>
-      </div>
-    </nav>
-
+    <div id="navigation"></div>
+    <script>
+      $(function () {
+        $("#navigation").load("navigation.html");
+      });
+    </script>
     <!-- Carousel Function -->
 
-    <div id="carouselExampleIndicators" class="carousel slide">
+    <div id="carousel_ad" class="carousel slide">
       <div class="carousel-indicators">
         <button
           type="button"
-          data-bs-target="#carouselExampleIndicators"
+          data-bs-target="#carousel_ad"
           data-bs-slide-to="0"
           class="active"
           aria-current="true"
@@ -135,20 +39,20 @@
         ></button>
         <button
           type="button"
-          data-bs-target="#carouselExampleIndicators"
+          data-bs-target="#carousel_ad"
           data-bs-slide-to="1"
           aria-label="Slide 2"
         ></button>
         <button
           type="button"
-          data-bs-target="#carouselExampleIndicators"
+          data-bs-target="#carousel_ad"
           data-bs-slide-to="2"
           aria-label="Slide 3"
         ></button>
       </div>
       <div class="carousel-inner carousel_height">
         <div class="carousel-item active">
-          <img src="../images/Suitcase Ad.png" class="w-100" alt="..." />
+          <img src="../images/Suitcase Ad.png" class="w-100" />
         </div>
         <div class="carousel-caption text-end">
           <h2>SUMMER FOR LONGER</h2>
@@ -158,24 +62,16 @@
           >
         </div>
         <div class="carousel-item">
-          <img
-            src="../images/Duffle Bag Ad.png"
-            class="d-block w-100"
-            alt="..."
-          />
+          <img src="../images/Duffle Bag Ad.png" class="d-block w-100" />
         </div>
         <div class="carousel-item">
-          <img
-            src="../images/Organisers Ad.png"
-            class="d-block w-100"
-            alt="..."
-          />
+          <img src="../images/Organisers Ad.png" class="d-block w-100" />
         </div>
       </div>
       <button
         class="carousel-control-prev"
         type="button"
-        data-bs-target="#carouselExampleIndicators"
+        data-bs-target="#carousel_ad"
         data-bs-slide="prev"
       >
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -184,7 +80,7 @@
       <button
         class="carousel-control-next"
         type="button"
-        data-bs-target="#carouselExampleIndicators"
+        data-bs-target="#carousel_ad"
         data-bs-slide="next"
       >
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
@@ -232,15 +128,122 @@
     <hr />
     <div class="box">
       <img src="../images/Going away.jpg" style="width: 50%" />
-      <div class="multiline text-center">
+      <div class="text-center">
         <h2>Going Away?</h2>
-        <h4>Travel smoothly with our limited edition suitcase</h4>
-        <img src="../images/Green Front.jpg" style="width: 50%" />
+        <br />
+        <h4>Travel smoothly with our limited edition suitcases</h4>
+        <div id="carousel_highlight" class="carousel slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carousel_highlight"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel_highlight"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel_highlight"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel_highlight"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+          </div>
+          <div class="carousel-inner carousel_height">
+            <div class="carousel-item active">
+              <img src="../images/Green Front.jpg" class="w-50" />
+            </div>
+            <div class="carousel-item text-center">
+              <img src="../images/Green Side.jpg" class="w-50" />
+            </div>
+            <div class="carousel-item text-center">
+              <img src="../images/Pink Front.jpg" class="w-50" />
+            </div>
+            <div class="carousel-item text-center">
+              <img src="../images/Pink Side.jpg" class="w-50" />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carousel_highlight"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carousel_highlight"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
         <br />
         <a class="btn btn-outline-dark mt-auto" href="#">Shop Now</a>
       </div>
     </div>
     <hr />
+
+    <h1>Shop by Category</h1>
+
+    <div class="row">
+      <div class="card">
+        <img src="../images/The Expandable Carry-On.png" style="width: 100%" />
+        <h2>Suitcases</h2>
+        <p>Text</p>
+        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+          <div class="text-center">
+            <a class="btn btn-outline-dark mt-auto" href="#">View more</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../images/The Carry-On.png" style="width: 100%" />
+        <h2>Bags</h2>
+        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+          <p>Text</p>
+          <div class="text-center">
+            <a class="btn btn-outline-dark mt-auto" href="#">View more</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../images/The Packable.png" style="width: 100%" />
+        <h2>Accessories</h2>
+        <p>Text</p>
+        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+          <div class="text-center">
+            <a class="btn btn-outline-dark mt-auto" href="#">View more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div id="bottomnavigation"></div>
+    <script>
+      $(function () {
+        $("#bottomnavigation").load("bottomnavigation.html");
+      });
+    </script>
 
     <!-- Content body -->
     <div class="container">
