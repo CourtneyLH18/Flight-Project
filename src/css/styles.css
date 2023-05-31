@@ -40,7 +40,7 @@
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
+  max-width: 320px;
   margin: auto;
   text-align: center;
   font-family: arial;
@@ -78,4 +78,8 @@ h1 {
 .container {
   display: flex;
   justify-content: center;
+}
+
+.show-cart li {
+  display: flex;
 }

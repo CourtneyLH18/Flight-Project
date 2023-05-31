@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/styles.css" />
     <title>Home</title>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="cart.js"></script>
   </head>
   <body>
     <!-- Navigation Bar -->
@@ -92,34 +93,61 @@
 
     <div class="row">
       <div class="card">
-        <img src="../images/The Expandable Carry-On.png" style="width: 100%" />
-        <h2>The Expandable Carry-On</h2>
+        <img
+          src="../images/The Small.png"
+          style="width: 300px; height: 400px"
+        />
+        <h2>The Small</h2>
         <p class="price">£45.99</p>
         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
           <div class="text-center">
-            <a class="btn btn-outline-dark mt-auto" href="#">Add to Cart</a>
+            <a
+              class="btn btn-outline-dark mt-auto add-to-cart"
+              href="#"
+              data-name="The Small"
+              data-price="45.99"
+              >Add to Cart</a
+            >
           </div>
         </div>
       </div>
 
-      <div class="card">
-        <img src="../images/The Carry-On.png" style="width: 100%" />
+      <div class="card h-100">
+        <img
+          src="../images/The Carry-On.png"
+          style="width: 300px; height: 400px"
+        />
         <h2>The Carry-On</h2>
         <p class="price">£45.99</p>
         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
           <div class="text-center">
-            <a class="btn btn-outline-dark mt-auto" href="#">Add to Cart</a>
+            <a
+              class="btn btn-outline-dark mt-auto add-to-cart"
+              href="#"
+              data-name="The Carry On"
+              data-price="45.99"
+              >Add to Cart</a
+            >
           </div>
         </div>
       </div>
 
-      <div class="card">
-        <img src="../images/The Packable.png" style="width: 100%" />
+      <div class="card h-100">
+        <img
+          src="../images/The Packable.png"
+          style="width: 300px; height: 400px"
+        />
         <h2>The Packable</h2>
         <p class="price">£45.99</p>
         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
           <div class="text-center">
-            <a class="btn btn-outline-dark mt-auto" href="#">Add to Cart</a>
+            <a
+              class="btn btn-outline-dark mt-auto add-to-cart"
+              href="#"
+              data-name="The Carry On"
+              data-price="45.99"
+              >Add to Cart</a
+            >
           </div>
         </div>
       </div>
@@ -127,7 +155,7 @@
 
     <hr />
     <div class="box">
-      <img src="../images/Going away.jpg" style="width: 50%" />
+      <img src="../images/Going away.jpg" style="width: 50%; height: 600px" />
       <div class="text-center">
         <h2>Going Away?</h2>
         <br />
@@ -195,7 +223,7 @@
           </button>
         </div>
         <br />
-        <a class="btn btn-outline-dark mt-auto" href="LimitedEdition.html"
+        <a class="btn btn-outline-dark mt-auto add-to-cart" href="LimitedEdition.html"
           >Shop Now</a
         >
       </div>
@@ -206,7 +234,10 @@
 
     <div class="row">
       <div class="card">
-        <img src="../images/The Expandable Carry-On.png" style="width: 100%" />
+        <img
+          src="../images/The Expandable Carry-On.png"
+          style="height: 400px"
+        />
         <h2>Suitcases</h2>
         <p>Text</p>
         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
@@ -219,7 +250,7 @@
       </div>
 
       <div class="card">
-        <img src="../images/The Carry-On.png" style="width: 100%" />
+        <img src="../images/The Packable.png" style="height: 400px" />
         <h2>Bags</h2>
         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
           <p>Text</p>
@@ -232,7 +263,7 @@
       </div>
 
       <div class="card">
-        <img src="../images/The Packable.png" style="width: 100%" />
+        <img src="../images/Luggage Tag.png" style="height: 400px" />
         <h2>Accessories</h2>
         <p>Text</p>
         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
