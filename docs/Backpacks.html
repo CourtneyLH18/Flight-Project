@@ -14,7 +14,8 @@
 
     <!-- Custom CSS-->
     <link rel="stylesheet" href="css/styles.css" />
-    <title>Essentials</title>
+    <title>Backpacks</title>
+    <link rel="icon" href="images/flight.png" />
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
   </head>
   <body>
@@ -22,33 +23,52 @@
     <div id="navigation"></div>
     <script>
       $(function () {
-        $("#navigation").load("navigation.html");
+        $("#navigation").load("Navigation.html");
       });
     </script>
 
     <!--Product items-->
-    <div class="card">
-      <img src="../images/Luggage Tag.png" style="width: 100%" />
-      <h3>Luggage Tag</h3>
-      <p class="price">£12</p>
-      <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-        <div class="text-center">
-          <a
-            class="btn btn-outline-dark mt-auto add-to-cart"
-            href="#"
-            data-name="Luggage Tag"
-            data-price="12"
-            >Add to Cart</a
-          >
+    <div class="row">
+      <div class="card">
+        <img src="images/The Packable.png" style="width: 100%" />
+        <h3>The Packable</h3>
+        <p class="price">£19.99</p>
+        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+          <div class="text-center">
+            <a
+              class="btn btn-outline-dark mt-auto add-to-cart"
+              href="#"
+              data-name="The Packable"
+              data-price="19.99"
+              >Add to Cart</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="images/Pocket Backpack.png" style="width: 100%" />
+        <h3>Pocket Backpack</h3>
+        <p class="price">£34.99</p>
+        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+          <div class="text-center">
+            <a
+              class="btn btn-outline-dark mt-auto add-to-cart"
+              href="#"
+              data-name="Pocket Backpack"
+              data-price="34.99"
+              >Add to Cart</a
+            >
+          </div>
         </div>
       </div>
     </div>
 
     <!-- Navigation Bar -->
-    <div id="bottomnavigation"></div>
+    <div id="BottomNavigation"></div>
     <script>
       $(function () {
-        $("#bottomnavigation").load("bottomnavigation.html");
+        $("#BottomNavigation").load("BottomNavigation.html");
       });
     </script>
 
