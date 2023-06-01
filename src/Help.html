@@ -14,7 +14,7 @@
 
     <!-- Custom CSS-->
     <link rel="stylesheet" href="css/styles.css" />
-    <title>Home</title>
+    <title>Help</title>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
   </head>
   <body>
@@ -26,7 +26,55 @@
       });
     </script>
 
-    <h1>Help</h1>
+    <div class="contact_form">
+      <h3 class="text-center">Help</h3>
+      <br />
+      <h5>
+        Let us know how we can help by completing the form. We typically respond
+        in 2-3 business days.
+      </h5>
+      <form>
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Full Name</label>
+          <input
+            type="name"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="Jane Doe"
+          />
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Email address</label>
+          <input
+            type="email"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="name@example.com"
+          />
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlSelect1">What can we help with?</label>
+          <select class="form-control" id="exampleFormControlSelect1">
+            <option></option>
+            <option>Return Items</option>
+            <option>Exchange Items</option>
+            <option>Billing and Payments</option>
+            <option>Order Status</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Tell Us More</label>
+          <textarea
+            class="form-control"
+            id="exampleFormControlTextarea1"
+            rows="3"
+          ></textarea>
+        </div>
+      </form>
+      <br />
+      <button type="submit" class="btn btn-dark">Submit</button>
+    </div>
 
     <!-- Navigation Bar -->
     <div id="bottomnavigation"></div>

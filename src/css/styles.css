@@ -1,31 +1,13 @@
-.page_label {
-  margin-top: 40px;
-}
-
-.text-primary {
-  color: green;
-}
-
-.display-1 {
-  color: blue;
-}
-
-.section1 {
-  margin-top: 50px;
-}
+@import url("https://fonts.googleapis.com/css2?family=Bad+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bad+Script&family=Dosis:wght@200&family=Quicksand:wght@300&display=swap");
 
 .small_cols {
-  background-color: green;
+  background-color: rgb(255, 255, 255);
   border: 2px white solid;
 }
 
 .dropdown_hover {
-  --bs-dropdown-link-hover-bg: olive;
-}
-
-.search_button {
-  --bs-btn-hover-bg: olive;
-  border-color: olive;
+  --bs-dropdown-link-hover-bg: rgb(165, 165, 165);
 }
 
 .carousel {
@@ -56,9 +38,20 @@
   opacity: 0.7;
 }
 
-h1 {
+h1,
+.cursive {
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Bad Script", cursive;
+}
+
+h3,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  font-family: "Quicksand", sans-ser;
 }
 
 .box {
@@ -66,12 +59,8 @@ h1 {
   align-items: center;
 }
 
-.multiline {
-  white-space: pre-line;
-}
-
 .carousel-control-next,
-.carousel-control-prev /*, .carousel-indicators */ {
+.carousel-control-prev {
   filter: invert(100%);
 }
 
@@ -82,4 +71,9 @@ h1 {
 
 .show-cart li {
   display: flex;
+}
+
+.contact_form {
+  margin-left: 100px;
+  margin-right: 100px;
 }

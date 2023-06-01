@@ -1,11 +1,5 @@
-// ************************************************
-// Shopping Cart API
-// ************************************************
-
 var shoppingCart = (function() {
-    // =============================
-    // Private methods and propeties
-    // =============================
+    
     cart = [];
     
     // Constructor
@@ -28,10 +22,6 @@ var shoppingCart = (function() {
       loadCart();
     }
     
-  
-    // =============================
-    // Public methods and propeties
-    // =============================
     var obj = {};
     
     // Add to cart
@@ -56,20 +46,7 @@ var shoppingCart = (function() {
         }
       }
     };
-    // Remove item from cart
-    obj.removeItemFromCart = function(name) {
-        for(var item in cart) {
-          if(cart[item].name === name) {
-            cart[item].count --;
-            if(cart[item].count === 0) {
-              cart.splice(item, 1);
-            }
-            break;
-          }
-      }
-      saveCart();
-    }
-  
+    
     // Remove all items from cart
     obj.removeItemFromCartAll = function(name) {
       for(var item in cart) {
@@ -120,25 +97,10 @@ var shoppingCart = (function() {
       }
       return cartCopy;
     }
-  
-    // cart : Array
-    // Item : Object/Class
-    // addItemToCart : Function
-    // removeItemFromCart : Function
-    // removeItemFromCartAll : Function
-    // clearCart : Function
-    // countCart : Function
-    // totalCart : Function
-    // listCart : Function
-    // saveCart : Function
-    // loadCart : Function
+
     return obj;
   })();
   
-  
-  // *****************************************
-  // Triggers / Events
-  // ***************************************** 
   // Add item
   $('.add-to-cart').click(function(event) {
     event.preventDefault();
@@ -173,34 +135,6 @@ var shoppingCart = (function() {
     $('.total-count').html(shoppingCart.totalCount());
   }
 
-  /*function displayCart() {
-    var cartArray = shoppingCart.listCart();
-    var output = "";
-    for(var i in cartArray) {
-      output += "<tr>"
-        + "<td>" + cartArray[i].name + "</td>" 
-        + "<td>(" + cartArray[i].price + ")</td>"
-        + "<td><div class='input-group'><button class='minus-item input-group-addon btn btn-primary' data-name=" + cartArray[i].name + ">-</button>"
-        + "<input type='number' class='item-count form-control' data-name='" + cartArray[i].name + "' value='" + cartArray[i].count + "'>"
-        + "<button class='plus-item btn btn-primary input-group-addon' data-name=" + cartArray[i].name + ">+</button></div></td>"
-        + "<td><button class='delete-item btn btn-danger' data-name=" + cartArray[i].name + ">X</button></td>"
-        + " = " 
-        + "<td>" + cartArray[i].total + "</td>" 
-        +  "</tr>";
-    }
-    $('.show-cart').html(output);
-    $('.total-cart').html(shoppingCart.totalCart());
-    $('.total-count').html(shoppingCart.totalCount());
-  }*/
-  
-// Delete item button
-
-$('.show-cart').on("click", ".delete-item", function(event) {
-  var name = $(this).data('name')
-  shoppingCart.removeItemFromCartAll(name);
-  displayCart();
-})
-  
   // Item count input
   $('.show-cart').on("change", ".item-count", function(event) {
      var name = $(this).data('name');
