@@ -124,12 +124,12 @@
         <i class="container"><h2>FLIGHT</h2></i>
         <button
           type="button"
-          class="btn btn-primary"
+          class="btn btn-dark"
           data-bs-toggle="modal"
           data-bs-target="#cart"
         >
           Cart (<span class="total-count"></span>)</button
-        ><button class="clear-cart btn btn-danger">Clear Cart</button>
+        ><button class="clear-cart btn btn-secondary">Clear Cart</button>
       </div>
     </div>
   </nav>
@@ -147,21 +147,17 @@
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
-          <button
-            type="button"
-            class="close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
-            <span aria-hidden="true">&times;</span>
-          </button>
         </div>
         <div class="modal-body">
           <table class="show-cart table"></table>
           <div>Total price: £<span class="total-cart"></span></div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          <button
+            type="button"
+            class="btn btn-secondary"
+            data-bs-dismiss="modal"
+          >
             Close
           </button>
         </div>
